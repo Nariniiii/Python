@@ -43,7 +43,7 @@ while num <= 7:
     hang = 4/num              #hang: 각 항을 계산하는 변수 
     if count % 2 == 0: 
         hang = hang * (-1)    #짝수번째 항이면 -1을 곱한다. 
-    PI = PI + num 
+    PI = PI + hang  
 
     num = num + 2 
     count = count + 1 
