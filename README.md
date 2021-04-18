@@ -33,15 +33,15 @@
 그래서 반복문을 통해서 일단 네번째 항까지 계산하는 코드 먼저 작성해봐야겠다고 생각했어요.
 
 ```{.python}
-    num = 1      #num = 1,3,5,7.... 
-    PI = 0    #계산한 최종 값이 들어가는 변수 
-    count = 1   #짝수번째 항인지 홀수번째 항인지 계산하는 데 쓰는변수 
+num = 1      #num = 1,3,5,7.... 
+PI = 0    #계산한 최종 값이 들어가는 변수 
+count = 1   #짝수번째 항인지 홀수번째 항인지 계산하는 데 쓰는변수 
     
-    while num <= 7: 
-        hang = 4/num     #hang: 각 항을 계산하는 변수 
-        if count % 2 == 0: 
-            hang = hang * (-1)     #짝수번째 항이면 -1을 곱한다. 
-        PI = PI + num 
+while num <= 7: 
+    hang = 4/num     #hang: 각 항을 계산하는 변수 
+    if count % 2 == 0: 
+        hang = hang * (-1)     #짝수번째 항이면 -1을 곱한다. 
+    PI = PI + num 
 
     num = num + 2 
     count = count + 1 
